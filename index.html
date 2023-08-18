@@ -14,47 +14,53 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <div class="frame">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Type a city.."
+                autocomplete="off"
+                class="form-control"
+              />
+            </div>
+
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-primary w-100"
+              />
+            </div>
+          </div>
+        </form>
+        <h1>New York</h1>
+        <ul>
+          <li>Last updated: Friday 12:45</li>
+          <li>Overcast clouds</li>
+        </ul>
         <div class="row">
-          <div class="col-9">
-            <input
-              type="search"
-              id="search-input"
-              placeholder="Type a city.."
-              autocomplete="off"
-              class="form-control"
-            />
+          <div class="col-6">
+            <img src="" alt="weather-image" />
+            <strong>24</strong>
+            <span>°C</span> |
+            <span>°F</span>
           </div>
-
-          <div class="col-3">
-            <input type="submit" value="Search" class="btn btn-primary w-100" />
+          <div class="col-6">
+            <ul>
+              <li>Humidity:85%</li>
+              <li>Wind: 16 km/h</li>
+            </ul>
           </div>
         </div>
-      </form>
-      <h1>New York</h1>
-      <ul>
-        <li>Last updated: Friday 12:45</li>
-        <li>Overcast clouds</li>
-      </ul>
-      <div class="row">
-        <div class="col-6">
-          <img src="" alt="weather-image" />
-          <strong>24</strong>
-          <span>°C</span> |
-          <span>°F</span>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity:85%</li>
-            <li>Wind: 16 km/h</li>
-          </ul>
-        </div>
+        <small
+          ><a href="#" target="_blank">Open-source code </a>by Myat Mon
+          Su</small
+        >
       </div>
-      <small
-        ><a href="#" target="_blank">Open-source code </a>by Myat Mon Su</small
-      >
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
