@@ -1,22 +1,22 @@
 body {
   font-family: arial, sans-serif;
 }
-div.container {
-  margin: 30px;
-}
-
-div.frame {
-  max-width: 45%;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-}
-
 ul {
   margin: 0;
   padding: 0;
 }
 li {
   list-style: none;
+}
+
+.container {
+  margin: 30px;
+}
+
+.frame {
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
