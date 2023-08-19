@@ -14,48 +14,56 @@
   </head>
   <body>
     <div class="container">
-      <div class="frame">
-        <form>
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                id="search-input"
-                placeholder="Type a city.."
-                autocomplete="off"
-                class="form-control"
-              />
-            </div>
+      <div class="outside-frame">
+        <div class="frame">
+          <form>
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  id="search-input"
+                  placeholder="Type a city.."
+                  autocomplete="off"
+                  class="form-control"
+                />
+              </div>
 
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="btn btn-primary w-100"
-              />
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
             </div>
-          </div>
-        </form>
-        <h1>New York</h1>
-        <ul>
-          <li>Last updated: Friday 12:45</li>
-          <li>Overcast clouds</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="http://openweathermap.org/img/wn/01n@2x.png"
-              alt="Overcast clouds"
-            />
-            <strong>24</strong>
-            <span>°C</span> |
-            <span>°F</span>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>Humidity:85%</li>
-              <li>Wind: 16 km/h</li>
-            </ul>
+          </form>
+          <h1>New York</h1>
+          <ul>
+            <li>Last updated: Friday 12:45</li>
+            <li>Overcast clouds</li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="http://openweathermap.org/img/wn/01n@2x.png"
+                  alt="Overcast clouds"
+                  id="icon"
+                />
+
+                <strong id="temperature">24</strong>
+                <span id="unit">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity:85%</li>
+                <li>Wind: 16 km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small
