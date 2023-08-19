@@ -7,18 +7,45 @@ h1 {
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
+  margin-top: 19px;
   margin-bottom: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
 li {
   list-style: none;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+small {
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 19px;
+}
+a {
+  color: rgb(0, 123, 255);
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+image {
+  color: rgb(33, 37, 41);
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 5px;
+  width: 64px;
 }
 
 .container {
-  margin: 30px;
+  margin: 30px auto;
 }
 .outside-frame {
   max-width: 600px;
@@ -41,11 +68,28 @@ li {
 #unit {
   cursor: pointer;
 }
+
 #celsius-link,
 #fahrenheit-link {
   text-decoration: none;
 }
 #celsius-link:hover,
 #fahrenheit-link:hover {
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+#temperature-degeree {
+  position: relative;
+  top: 20px;
+  right: 15px;
+}
+
+#unit {
+  position: relative;
+  top: -40px;
+}
+#humidity-wind {
+  position: relative;
+  top: 20px;
+  padding-left: 30px;
 }
