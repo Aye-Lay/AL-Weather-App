@@ -20,8 +20,8 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hour}:${minute}`;
 }
+
 function displayFormat(response) {
-  console.log(response);
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
@@ -42,7 +42,18 @@ function displayFormat(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-let apiKey = "ob09c1d70a7b42abct8580f52909b5a3";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Lisbon&key=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "ob09c1d70a7b42abct8580f52909b5a3";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayFormat);
+}
+function showCity(event) {
+  event.preventDefault();
+  let inputElement = document.querySelector("#city-input");
+  search(inputElement.value);
+}
 
-axios.get(apiUrl).then(displayFormat);
+search("New York");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", showCity);
