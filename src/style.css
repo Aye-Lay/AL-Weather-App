@@ -72,13 +72,12 @@ image {
   cursor: pointer;
 }
 
-#celsius-link,
-#fahrenheit-link {
-  text-decoration: none;
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
-#celsius-link:hover,
-#fahrenheit-link:hover {
-  text-decoration: underline;
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
 #temperature-degeree {
