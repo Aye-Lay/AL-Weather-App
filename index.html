@@ -9,6 +9,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -37,10 +38,10 @@
               </div>
             </div>
           </form>
-          <h1>New York</h1>
+          <h1 id="city"></h1>
           <ul>
-            <li>Last updated: Friday 12:45</li>
-            <li>Overcast clouds</li>
+            <li>Last updated: <span id="date"></span></li>
+            <li id="description"></li>
           </ul>
           <div class="row">
             <div class="col-6">
@@ -51,7 +52,7 @@
                   id="icon"
                 />
                 <div id="temperature-degeree">
-                  <strong id="temperature">24</strong
+                  <strong id="temperature"></strong
                   ><span id="unit"
                     ><a href="#" id="celsius-link">°C </a>|<a
                       href="#"
@@ -65,8 +66,8 @@
             </div>
             <div class="col-6">
               <ul id="humidity-wind">
-                <li>Humidity:85%</li>
-                <li>Wind: 16 km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
